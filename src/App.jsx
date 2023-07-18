@@ -1,5 +1,10 @@
+import Header from "./components/Header";
 const App = () => {
-    return <>hello</>;
+    return (
+        <>
+            <Header />
+        </>
+    );
 };
 
 // var fullList = [1,2,3,4],

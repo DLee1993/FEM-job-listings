@@ -6,6 +6,6 @@
 
 @layer base {
     body {
-        @apply font-LeagueSpartan text-[15px];
+        @apply font-LeagueSpartan text-[15px] bg-neutral-background;
     }
 }
