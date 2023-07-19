@@ -15,23 +15,10 @@
         @apply text-white rounded-full pt-3 pb-2 pl-2 pr-2 uppercase mx-1 text-xs leading-[0px];
     }
     .tag {
-        @apply bg-primary-DarkCyan/20 text-primary-DarkCyan pt-2 pb-1 pl-2 pr-2 mr-2 my-2 md:my-0 md:mr-0 md:mx-2 rounded font-bold hover:bg-primary-DarkCyan hover:text-white cursor-pointer;
+        @apply bg-primary-DarkCyan/20 text-primary-DarkCyan pt-2 pb-1 pl-2 pr-2 mr-2 mb-2 md:mb-0 md:my-0 md:mr-0 md:mx-2 rounded font-bold hover:bg-primary-DarkCyan hover:text-white cursor-pointer;
     }
-}
 
-* {
-    scrollbar-width: thin;
-    scrollbar-color: #effafa #5ba4a4;
-}
-
-*::-webkit-scrollbar {
-    width: 5px;
-}
-
-*::-webkit-scrollbar-track {
-    background: #effafa;
-}
-
-*::-webkit-scrollbar-thumb {
-    background-color: #5ba4a4;
+    .filterTag {
+        @apply bg-primary-DarkCyan/20 text-primary-DarkCyan mr-2 md:my-0 md:mr-0 md:mx-2 rounded font-bold;
+    }
 }

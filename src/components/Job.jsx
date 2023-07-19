@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import Pill from "./Pill";
 
-const Job = ({ job }) => {
+const Job = ({ job, setTags }) => {
     const {
         company,
         logo,
@@ -17,11 +17,19 @@ const Job = ({ job }) => {
         tools,
     } = job;
 
+    const addTag = (e) => {
+        setTags((prevArray) =>
+            prevArray.includes(e.target.innerHTML)
+                ? [...prevArray]
+                : [...prevArray, e.target.innerHTML]
+        );
+    };
+
     return (
         <li
             className={`${
                 featured ? "border-l-4 border-primary-DarkCyan" : ""
-            } relative max-w-[375px] md:max-w-[1000px] h-72 md:h-28 bg-white my-12 md:my-4 mx-auto rounded md:px-6 py-6 md:py-0 flex justify-around md:justify-between items-start md:items-center flex-col md:flex-row`}
+            } relative w-[95%] max-w-[500px] md:max-w-[1000px] h-72 md:h-28 bg-white my-12 md:my-4 mx-auto rounded md:px-6 py-6 md:py-0 flex justify-around md:justify-between items-start md:items-center flex-col md:flex-row`}
         >
             <section id="job_listing" className="w-[90%] md:w-auto mx-auto md:mx-0 mt-4 md:mt-0">
                 <article
@@ -69,17 +77,21 @@ const Job = ({ job }) => {
                 id="job_tags"
                 className="w-[90%] md:w-auto mx-auto border-t-[1px] border-neutral-darkGrayCyan pt-4 md:pt-0 md:border-t-0 md:mx-0"
             >
-                <ul className="flex justify-start items-center flex-wrap md:justify-center w-[70%] md:w-auto">
-                    <li className="tag">{role}</li>
-                    <li className="tag">{level}</li>
+                <ul className="flex justify-start items-center flex-wrap md:justify-center md:w-auto">
+                    <li className="tag" onClick={addTag}>
+                        {role}
+                    </li>
+                    <li className="tag" onClick={addTag}>
+                        {level}
+                    </li>
                     {languages.map((lang, index) => (
-                        <li key={index} className="tag">
+                        <li key={index} className="tag" onClick={addTag}>
                             {lang}
                         </li>
                     ))}
-                    {tools?.map((lang, index) => (
-                        <li key={index} className="tag">
-                            {lang}
+                    {tools?.map((tools, index) => (
+                        <li key={index} className="tag" onClick={addTag}>
+                            {tools}
                         </li>
                     ))}
                 </ul>
@@ -90,6 +102,7 @@ const Job = ({ job }) => {
 
 Job.propTypes = {
     job: PropTypes.object,
+    setTags: PropTypes.func,
 };
 
 export default Job;
