@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 -   Solution URL: https://www.frontendmentor.io/solutions/responsive-component-using-tailwindcss-bK09BzMNWC
--   Live Site URL: https://dlee1993.github.io/FEM-results_summary_component/
+-   Live Site URL: https://dlee1993.github.io/FEM-job-listings/
 
 ## My process
 
