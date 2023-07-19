@@ -2,7 +2,7 @@
     {
         "id": 1,
         "company": "Photosnap",
-        "logo": "src/images/photosnap.svg",
+        "logo": "./src/images/photosnap.svg",
         "new": true,
         "featured": true,
         "position": "Senior Frontend Developer",
