@@ -3,7 +3,7 @@
 //     filteredLists = arr1.filter(item => arr2.includes(item));
 // console.log(res);
 import { useState } from "react";
-import data from "../data.json";
+import data from "../../data.json";
 import Job from "./Job";
 import Tag from "./Tag";
 
