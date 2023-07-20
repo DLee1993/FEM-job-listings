@@ -40,7 +40,11 @@ const Job = ({ job, setTags }) => {
                         id="company_logo"
                         className="mr-4 absolute top-[-25px] md:relative md:top-0"
                     >
-                        <img src={logo} alt="company logo" className="w-12 md:w-16 h-12 md:h-16" />
+                        <img
+                            src={`${logo}`}
+                            alt="company logo"
+                            className="w-12 md:w-16 h-12 md:h-16"
+                        />
                     </figure>
                     <article id="job_text">
                         <section
