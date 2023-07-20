@@ -4,7 +4,6 @@ import Pill from "./Pill";
 const Job = ({ job, setTags }) => {
     const {
         company,
-        logo,
         new: recentListing,
         featured,
         position,
@@ -41,7 +40,7 @@ const Job = ({ job, setTags }) => {
                         className="mr-4 absolute top-[-25px] md:relative md:top-0"
                     >
                         <img
-                            src={`${logo}`}
+                            src={job.logo}
                             alt="company logo"
                             className="w-12 md:w-16 h-12 md:h-16"
                         />
