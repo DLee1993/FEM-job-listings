@@ -5,6 +5,7 @@ const Job = ({ job, setTags }) => {
     const {
         company,
         new: recentListing,
+        logo,
         featured,
         position,
         role,
@@ -40,7 +41,7 @@ const Job = ({ job, setTags }) => {
                         className="mr-4 absolute top-[-25px] md:relative md:top-0"
                     >
                         <img
-                            src={job.logo}
+                            src={logo}
                             alt="company logo"
                             className="w-12 md:w-16 h-12 md:h-16"
                         />
