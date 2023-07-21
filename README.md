@@ -36,7 +36,7 @@ Users should be able to:
 
 ## My process
 
-For this challenge my process was fairly straight forward, I initially split the challenge into two parts, the results section and the summary section. Firstly I styled the responsive layout for the overall component using flexbox, that takes care of the mobile and desktop layout, for this challenge the layout is straight forward as the only pieces of the component that change layout are the results and summary sections, all other text stays the same. I then added and styled the jsx for the results section of the component. I also did the same for the summart section with a slight change, I decided to break out the icons into their own components and added them to the SVG-components file and imported them into the app.jsx.
+So for this challenge I decided to break it down into various components, header, jobList, job, pill and tag. This  allowed me to concentrate on small challenges that lead to the completion of the full challenge. So the header is obviously the header and then we had the main component the jobList, this consisted of the filter bar and the individual jobs, then we have the job which consisted of the job details and the filter tags and pill ( the pills are shown on the job that is new, featured or both). The tags are used as the user click events and to show the categories of each job. I used the click events of the tags to show the filter bar and filter the list to only include that jobs that had categories including the tags the user clicked. I used props to pass information between components, although for large projects it would not be performant, it was the perfect job for this project.
 
 ### Built with
 
