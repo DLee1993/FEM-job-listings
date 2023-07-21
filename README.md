@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
--   Solution URL: https://www.frontendmentor.io/solutions/responsive-component-using-tailwindcss-bK09BzMNWC
+-   Solution URL: https://www.frontendmentor.io/challenges/job-listings-with-filtering-ivstIPCt/hub
 -   Live Site URL: https://dlee1993.github.io/FEM-job-listings/
 
 ## My process
