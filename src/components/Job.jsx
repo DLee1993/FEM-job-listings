@@ -57,7 +57,7 @@ const Job = ({ job, setTags }) => {
                             <p id="company_name" className="mr-2 text-primary-DarkCyan font-bold">
                                 {company}
                             </p>
-                            <aside className="flex ml-2">
+                            <aside className="flex ml-2" aria-label="job label">
                                 {recentListing ? <Pill title="new!" /> : null}
                                 {featured ? <Pill title="featured" /> : null}
                             </aside>
