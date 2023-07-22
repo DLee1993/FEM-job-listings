@@ -1,6 +1,6 @@
 # Frontend Mentor - Results summary component solution
 
-This is a solution to the [Results summary component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Job Listings challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/job-listings-with-filtering-ivstIPCt/hub). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -16,7 +16,7 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 
 ## Overview
 
-The challenge is building out a results summary component and getting it as close to the design as possible. For this challenge I attempted to use Tailwindcss for the first time.
+The challenge is building out a job listings component and getting it as close to the design as possible. For this challenge I attempted to use Tailwindcss for the first time.
 
 ### The challenge
 
