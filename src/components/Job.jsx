@@ -35,7 +35,7 @@ const Job = ({ job, setTags, id }) => {
                 id={`job_listing-${id}`}
                 className="w-[90%] md:w-auto mx-auto md:mx-0 mt-4 md:mt-0"
             >
-                <h2 className="hidden" aria-label="job listing">Job Listing</h2>
+                <h2 className="hidden">Job Listing</h2>
                 <article
                     id={`job_details-${id}`}
                     className="flex justify-center items-start md:items-center flex-col md:flex-row"
@@ -47,9 +47,7 @@ const Job = ({ job, setTags, id }) => {
                         <img src={logo} alt="company logo" className="w-12 md:w-16 h-12 md:h-16" />
                     </figure>
                     <article id={`job_text-${id}`}>
-                        <h2 className="hidden" aria-label="job description">
-                            Job Description
-                        </h2>
+                        <h2>Job Description</h2>
                         <section
                             className={`${
                                 recentListing && featured
@@ -57,6 +55,7 @@ const Job = ({ job, setTags, id }) => {
                                     : "flex justify-netween items-center"
                             }`}
                         >
+                            <h3 className="hidden">Company</h3>
                             <p
                                 id={`company_name-${id}`}
                                 className="mr-2 text-primary-DarkCyan font-bold"
@@ -87,7 +86,7 @@ const Job = ({ job, setTags, id }) => {
                 id={`job_tags-${id}`}
                 className="w-[90%] md:w-auto mx-auto border-t-[1px] border-neutral-darkGrayCyan pt-4 md:pt-0 md:border-t-0 md:mx-0"
             >
-                <h2 className="hidden" aria-label="job tags">Job Tags</h2>
+                <h2 className="hidden">Job Tags</h2>
                 <ul className="flex justify-start items-center flex-wrap md:justify-center md:w-auto">
                     <li className="tag" onClick={addTag}>
                         {role}
