@@ -32,7 +32,13 @@ const JobListings = () => {
                         : "w-[95%] max-w-[500px] md:max-w-[1000px] mx-auto h-fit min-h-[3.5rem] flex justify-between items-center px-6 bg-white"
                 }
             >
+                <h2 className="hidden" aria-label="job filter">
+                    Tags filter
+                </h2>
                 <section className="max-w-[250px] md:max-w-[75%] flex flex-wrap">
+                    <h2 className="hidden" aria-label="filtered tags">
+                        Filtered tags
+                    </h2>
                     {tags.map((tag, index) => (
                         <Tag tag={tag} key={index} tagList={tags} setTags={setTags} />
                     ))}
@@ -47,9 +53,11 @@ const JobListings = () => {
             <ul className="mt-14">
                 {filteredArray.length > 0
                     ? filteredArray.map((job, index) => (
-                          <Job job={job} key={index} setTags={setTags} />
+                          <Job job={job} key={index} id={index} setTags={setTags} />
                       ))
-                    : data.map((job, index) => <Job job={job} key={index} setTags={setTags} />)}
+                    : data.map((job, index) => (
+                          <Job job={job} key={index} id={index} setTags={setTags} />
+                      ))}
             </ul>
         </main>
     );
