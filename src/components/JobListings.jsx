@@ -24,6 +24,7 @@ const JobListings = () => {
 
     return (
         <main className="relative pt-10 -mt-20">
+            <h1 className="text-4xl font-bold text-center sr-only">Job Listings</h1>
             <section
                 id="filterTags"
                 className={
